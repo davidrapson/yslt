@@ -1,8 +1,10 @@
 # You should listen to
 
-[davidrapson.github.io/yslt](http://davidrapson.github.io/yslt/)
+> Randomly recommends an album from Metacritic's top rated list and pulls in information from the iTunes API.
 
-> A little experiment to learn React. Randomly recommends an album from Metacritic's top rated list and pulls in information from the iTunes API.
+A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped together with shell scripts and some old-school web-scraping.
+
+[davidrapson.github.io/yslt](http://davidrapson.github.io/yslt/)
 
 ## Prerequisites
 
