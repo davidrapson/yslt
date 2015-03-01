@@ -8,7 +8,7 @@ const AlbumDetail = React.createClass({
     },
     itunesLinkTmpl() {
         return ( this.props.itunes ) ? (() => {
-            return <li><a href={this.props.itunes.collectionViewUrl} className="album__link">Itunes</a></li>
+            return <li><a href={this.props.itunes.collectionViewUrl} className="album__link">iTunes</a></li>
         })() : false;
     },
     rdioLinkTmpl(albumTitle) {
