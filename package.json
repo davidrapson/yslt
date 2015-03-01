@@ -1,0 +1,22 @@
+{
+  "name": "jspm-gu",
+  "version": "0.1.0",
+  "description": "JSPM / GU Content API experiment",
+  "main": "index.js",
+  "devDependencies": {
+    "live-server": "^0.6.3"
+  },
+  "scripts": {
+    "start": "./node_modules/live-server/live-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "jsonp": "npm:jsonp@^0.1.0",
+      "jsx": "^0.1.1",
+      "react": "^0.12.2",
+      "whatwg-fetch": "npm:whatwg-fetch@^0.7.0"
+    }
+  }
+}
