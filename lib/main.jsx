@@ -1,9 +1,9 @@
 import React from 'react';
-import RecommendedAlbum from 'modules/RecommendedAlbum.jsx!'
+import App from 'modules/App.jsx!'
 
 React.render(
-    <RecommendedAlbum />,
-    document.querySelector('.js-albums')
+    <App />,
+    document.getElementById('app')
 );
 
 export default {}
