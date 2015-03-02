@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react/addons';
 
 const AlbumDetail = React.createClass({
     artworkTmpl() {
@@ -6,16 +6,21 @@ const AlbumDetail = React.createClass({
             return <img src={this.props.itunes.artworkUrl100} alt={this.props.album.title} />
         })() : false;
     },
-    itunesLinkTmpl() {
-        return ( this.props.itunes ) ? (() => {
-            return <li><a href={this.props.itunes.collectionViewUrl} className="album__link">iTunes</a></li>
-        })() : false;
+    itunesLinkClasses() {
+        var cx = React.addons.classSet;
+        return cx({
+            'album__link': true,
+            'is-disabled': !this.props.itunes,
+        });
     },
-    rdioLinkTmpl(albumTitle) {
-        var url = `http://www.rdio.com/search/${window.encodeURIComponent(albumTitle)}/albums/`
-        return <li><a href={url} className="album__link">Rdio</a></li>
+    itunesLink() {
+        return (this.props.itunes) ? this.props.itunes.collectionViewUrl : '#';
+    },
+    rdioLink(albumTitle) {
+        return `http://www.rdio.com/search/${window.encodeURIComponent(albumTitle)}/albums/`
     },
     render() {
+
         return (
             <div className="album">
                 <div className="album__media">
@@ -30,8 +35,8 @@ const AlbumDetail = React.createClass({
                         <span className="album__artist">{this.props.album.artist}</span>
                     </div>
                     <ul className="album__links list-unstyled">
-                        {this.itunesLinkTmpl()}
-                        {this.rdioLinkTmpl(this.props.album.title)}
+                         <li><a href={this.itunesLink()} className={this.itunesLinkClasses()}>iTunes</a></li>
+                        <li><a href={this.rdioLink(this.props.album.title)} className="album__link">Rdio</a></li>
                     </ul>
                 </div>
             </div>
