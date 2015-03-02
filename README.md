@@ -6,13 +6,6 @@ A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped
 
 [davidrapson.github.io/yslt](http://davidrapson.github.io/yslt/)
 
-## Prerequisites
-
-You should have the following installed:
-
-- `node`
-- `wget` (for scraping YQL query data on build)
-
 ## Getting Started
 
 ``` sh
