@@ -24,7 +24,11 @@ page.open(url, function(status) {
             });
             return albumData;
         });
-        fs.write('data/albums.json', JSON.stringify(albums), 'w');
+
+        fs.write('data/albums.json', JSON.stringify({
+            updated: (new Date()).toISOString(),
+            results: albums
+        }), 'w');
     }
     phantom.exit();
 });
