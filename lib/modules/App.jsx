@@ -25,9 +25,7 @@ const App = React.createClass({
     },
     getItunesData(album) {
         return Albums.getItunesDetails(album).then(data => {
-            if (this.isMounted()) {
-                this.setState({ itunes: data });
-            }
+            this.setState({ itunes: data });
         })
     },
     componentWillMount() {
