@@ -24,7 +24,7 @@ const AlbumDetail = React.createClass({
                 <div className="album__body">
                     <div className="album__details">
                         <h2 className="album__title">{this.props.album.title}</h2>
-                        <span className="album__rating" title="Metascore">{this.props.album.rating}</span>
+                        <span className="album__rating" title="Metascore">{this.props.album.score}</span>
                     </div>
                     <div className="album__meta">
                         <span className="album__artist">{this.props.album.artist}</span>
