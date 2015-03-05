@@ -2,24 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Albums</title>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>You Should Listen To</title>
+    <style>
+        body{color:#fff;background-color:#333;line-height:1.3;margin:2em auto;max-width:520px;width:95%;font-family:"Merriweather","Chaparral Pro",Georgia}a{color:inherit;text-decoration:none;border-bottom:1px dotted #999;transition:opacity 150ms ease-out}a:hover{border-bottom-style:solid}a.is-disabled{opacity:.3;pointer-events:none;border-bottom:none}h1,h2,h3,h4,h5,h6{line-height:1.1;font-weight:300;margin:0}.list-unstyled{margin:0;padding:0;list-style:none}.list-unstyled>li{margin-right:.5em;display:inline-block}.list-unstyled>li:last-child{margin-right:0}.btn{cursor:pointer;color:#fff;background-color:#114;border:none;border-radius:5px;text-transform:uppercase;font-family:sans-serif;letter-spacing:1px;display:inline-block;vertical-align:middle;height:3em;line-height:3;padding-right:1em;padding-left:1em;outline:none;position:relative}.btn:hover,.btn:focus{background-color:#300}.btn:active{top:2px}.logo{text-transform:UPPERCASE;font-size:1rem;letter-spacing:2px;padding-bottom:1em;color:rgba(255,255,255,.9)}.logo,.footer{text-align:center}.footer__credits{color:#999;font-size:12px;font-family:sans-serif;margin:1em 0}.footer__credits>p{margin:0 0 .3em}.album{margin:1em 0;text-align:center}.album__media{margin:0 auto 1em;width:100px;height:100px;box-shadow:0 0 50px rgba(0,0,0,.4)inset;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QThCOTFENEJCODYxMTFFNEJBMzU4N0ZCNjlEODNGMjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QThCOTFENENCODYxMTFFNEJBMzU4N0ZCNjlEODNGMjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBOEI5MUQ0OUI4NjExMUU0QkEzNTg3RkI2OUQ4M0YyMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBOEI5MUQ0QUI4NjExMUU0QkEzNTg3RkI2OUQ4M0YyMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhzDdG0AAAQ9SURBVHja7JxbSBRRHMZndydTu0iQRhc0CkOwhx7KB1F6iBUTeggMEwuiJ0MiwYcIutBDT0JR2A1LDOopiHoJyieJoOeEoCCIiIqKeggqci99f3ZGZsfZ2dlV95xpvg8+zuzczuz/d/7nnDkrxrLZrEHpoxiBEAhFIARCEQiBUARCIBSBEAijQCAUgRAIRSAEQhEIgVAEQiAUgVAEQiAUgRAIRSAEsgAlk8kfKKr/t8BNTU3VLMV9zQo8uzz4crb9YIpXoA72iZoBoQiEQKgQDeqF9Bt+rXl8GuANUQHyCt6pOZAheCwqXVai0hVmMpnCU0Hv97GaSj+jaURA6XS6+NwcQGxgiURC2bOGZlC3A+bXyr0yQmDItY4MaIGvwy/hGfgW3GrXoXopKRQZkkqlcq0nHs/bF4vFCrbmAvD64JtwnWPfdrgfPglfVf0ia+qeEX4tVo7ZYASWlHOpj89OgFAbPAHXetyqFudexvVvcM+nUq/r2mh3WdLN2F2NS7ImttELjJzv050tszKgtkgshgFlpRNs5IH49ePYn0SwHmCzo8RZlKw2dxerG/fugusJJIAQpDXoRgZRtgHMOHZtKgFKvEh2OKfiCZXfUzsgPlPU/YCx14LTYpqmQFnhBcTOModn4bcBsvMz/EvlTCsUGYKZVBN8zvW83dg3CicAZ24Qlu7Gw3/gyQBVTQDGFwLxf1sWnYAbPbqxoyiOew3wrgzJwNeQPdM+dc/g+DjKFMcQn+4KLb/dWlPyksy6zrsHbBuKy9+xv996D/nmOP0nfBcwenH8nVyrEojuL4bgER9FWeUz2K9GcQOB7DFyC5Z++oTzBlFO4rqtFrz3KJ7p8oVNjUlIsIex2R7g9Cacfw/BlWnrV2nhRZZZXlieV6fy761xd7UFgR0sYVq8A74CV9mDeYnT6rySY8j85xqBm0sM6kEUp0u5xl4msSYU9TIuRX6W5Q4AAtQJHyjzdqfgQ4WywF738ji2C77vNZuLHBDnIiKCVYfAnLFaa1njIu41Bne6YRQYI+I49xiOPcI5u+Esp735geuF9yzwNgL1NoLcKsG1XxzdmYhjm+GHRm7Zfb2dsJHOENcSu3QXZxcJbDN8EW7wGOTlwwDqnQaofdZnbQZPbYSWPILANS5itnVZgJ0LhrJ8f8dyo249hHIgjvWmDp838oW8zwwhE+S+1aijB9uP4cOG4lVdbV8MHT/DXliqIAHAJVm2x2YfSq1XJ3R6uHVLCF16ggEjBNJpDJk1KP5tL4FQBEIg5WmtJs+hdDqs0yzriJH/F4Wq9JFAcnrCDkttl5UJQXz+RilDVhnBfp5VqW1RAiK/Bj5nJ8VpL4FQBEIgVHiAVDPMes2yPhBKcPEfmBEIRSAEQhEIgVAEQiAUgRAIgRAIRSAEQhEIgVAEQiAUgRAIRSAUgRAIRSAEQhEIgVCV0z8BBgDgYRmrent7qAAAAABJRU5ErkJggg==);background-repeat:no-repeat;background-position:center center}.album__media img{box-shadow:0 2px 20px rgba(0,0,0,.7)}.album__body{padding:10px 20px}.album__title{font-size:1.1rem;margin-bottom:3px;display:inline-block}.album__title::after{content:' / ';color:#666;margin:0 3px}.album__meta{margin-bottom:3px;color:#bbb}.album__links{font-family:sans-serif;font-size:.9rem}.album__rating{color:#bbb}
+    </style>
+    <script>
+        function loadCSS(a,b,c,d){"use strict";function h(){for(var a,b=0;b<g.length;b++)g[b].href&&g[b].href.indexOf(e.href)>-1&&(a=!0);a?e.media=c||"all":setTimeout(h)}var e=window.document.createElement("link"),f=b||window.document.getElementsByTagName("script")[0],g=window.document.styleSheets;return e.rel="stylesheet",e.href=a,e.media="only x",d&&(e.onload=d),f.parentNode.insertBefore(e,f),h(),e}
+        loadCSS('http://fonts.googleapis.com/css?family=Merriweather:300');
+    </script>
 </head>
 <body>
-    <main role="main" class="js-albums"></main>
-
-<!--
-    <script src="JSXTransformer.js"></script>
-    <script src="jspm_packages/system.js"></script>
-    <script src="config.js"></script>
-    <script>
-        System.import('lib/main.jsx!');
-    </script>
--->
-
+    <main role="main" id="app"></main>
     <script src="jspm_packages/traceur-runtime.js"></script>
     <script src="build/app.js"></script>
-
 </body>
 </html>
