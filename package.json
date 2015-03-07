@@ -10,7 +10,7 @@
     "watch": "^0.14.0"
   },
   "scripts": {
-    "start": "./build.sh && ./node_modules/browser-sync/bin/browser-sync.js start --server"
+    "start": "scripts/build && ./node_modules/browser-sync/bin/browser-sync.js start --server"
   },
   "author": "David Rapson",
   "repository": "https://github.com/davidrapson/yslt.git",
