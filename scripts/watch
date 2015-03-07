@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./node_modules/watch/cli.js scripts/build lib/
