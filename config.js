@@ -2,7 +2,8 @@ System.config({
   "paths": {
     "*": "*.js",
     "jspm-gu/*": "lib/*.js",
-    "modules/*": "lib/modules/*.js",
+    "models/*": "lib/models/*.js",
+    "components/*": "lib/components/*.js",
     "utils/*": "lib/utils/*.js",
     "npm:*": "jspm_packages/npm/*.js",
     "github:*": "jspm_packages/github/*.js",

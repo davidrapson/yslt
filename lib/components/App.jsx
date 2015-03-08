@@ -1,10 +1,6 @@
 import React from 'react';
-import Albums from 'modules/Albums';
-import AlbumDetailComponent from 'modules/AlbumDetail.jsx!';
-
-const random = (arr) => {
-    return arr[Math.floor(Math.random()*arr.length)];
-}
+import Albums from 'models/Albums';
+import AlbumDetailComponent from 'components/AlbumDetail.jsx!';
 
 const App = React.createClass({
     getInitialState() {
@@ -14,17 +10,16 @@ const App = React.createClass({
         }
     },
     getAlbumData() {
-        return Albums.load()
-            .then(data => random(data))
+        return Albums.getRandom()
             .then(data => {
                 if (this.isMounted()) {
-                    this.getItunesData(data);
+                    this.fetchItunesDetails(data);
                     this.setState({ album: data });
                 }
             });
     },
-    getItunesData(album) {
-        return Albums.getItunesDetails(album).then(data => {
+    fetchItunesDetails(album) {
+        return Albums.fetchItunesDetails(album).then(data => {
             this.setState({ itunes: data });
         })
     },
