@@ -1,4 +1,5 @@
-import React from 'react/addons';
+import React from 'react';
+import classnames from 'classnames';
 
 const AlbumDetail = React.createClass({
     render() {
@@ -15,7 +16,7 @@ const AlbumDetail = React.createClass({
             return `http://www.rdio.com/search/${window.encodeURIComponent(albumTitle)}`
         };
         const itunesLinkClasses = () => {
-            return React.addons.classSet({
+            return classnames({
                 'album__link': true,
                 'is-disabled': !this.props.itunes,
             });
