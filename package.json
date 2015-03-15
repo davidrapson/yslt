@@ -17,9 +17,10 @@
   "license": "ISC",
   "jspm": {
     "dependencies": {
+      "classnames": "npm:classnames@^1.1.4",
       "jsonp": "npm:jsonp@^0.1.0",
-      "jsx": "^0.1.1",
-      "react": "^0.12.2",
+      "jsx": "^1.1.0",
+      "react": "^0.13.0",
       "whatwg-fetch": "npm:whatwg-fetch@^0.7.0"
     }
   }
