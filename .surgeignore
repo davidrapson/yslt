@@ -1,0 +1,5 @@
+node_modules/
+jspm_packages/*
+!jspm_packages/traceur-runtime.js
+!jspm_packages/traceur-runtime.js.map
+scripts/
