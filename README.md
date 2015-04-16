@@ -21,6 +21,15 @@ npm start
 ./build.sh
 ```
 
+## Deployment
+
+Deployment is handled via [surge](https://surge.sh/)
+
+``` sh
+./scripts/build
+surge
+```
+
 ## Run in dev mode
 
 ``` js
