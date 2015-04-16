@@ -10,7 +10,13 @@
     "watch": "^0.14.0"
   },
   "scripts": {
-    "start": "scripts/build && ./node_modules/browser-sync/bin/browser-sync.js start --server"
+    "build-css": "csso -i css/style.css -o css/style.min.css",
+    "build-js": "jspm bundle-sfx --minify lib/main.jsx! build/app.js",
+    "build": "npm run build-js && npm run build-css",
+    "watch": "npm run build && watch scripts/build lib/",
+    "start": "npm run build && browser-sync start --server",
+    "update": "phantomjs phantom/metagrabber.js",
+    "deploy": "npm run build && surge"
   },
   "author": "David Rapson",
   "repository": "https://github.com/davidrapson/yslt.git",
