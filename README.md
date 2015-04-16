@@ -4,7 +4,7 @@
 
 A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped together with shell scripts and some old-school web-scraping.
 
-[davidrapson.github.io/yslt](http://davidrapson.github.io/yslt/)
+[yslt.davidrapson.co.uk](http://yslt.davidrapson.co.uk/)
 
 ## Getting Started
 
