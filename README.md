@@ -9,16 +9,31 @@ A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped
 ## Getting Started
 
 ``` sh
-npm install -g jspm
-npm install
+npm install 
 jspm install
 npm start
 ```
 
-## Build
+## Available Tasks
 
+### Build
 ``` sh
-./build.sh
+npm run build
+```
+
+### Update data feed
+``` sh
+npm run update
+```
+
+### Watch files for changes
+``` sh
+npm run watch
+```
+
+### Start BrowserSync server
+``` sh
+npm start
 ```
 
 ## Deployment
@@ -26,8 +41,7 @@ npm start
 Deployment is handled via [surge](https://surge.sh/)
 
 ``` sh
-./scripts/build
-surge
+npm run deploy
 ```
 
 ## Run in dev mode
