@@ -16,24 +16,27 @@ npm start
 
 ## Available Tasks
 
-### Build
+Start BrowserSync server
+``` sh
+npm start
+```
+
+Run a build
+
 ``` sh
 npm run build
 ```
 
-### Update data feed
-``` sh
-npm run update
-```
+Watch files for changes
 
-### Watch files for changes
 ``` sh
 npm run watch
 ```
 
-### Start BrowserSync server
+Update data feed
+
 ``` sh
-npm start
+npm run update
 ```
 
 ## Deployment
