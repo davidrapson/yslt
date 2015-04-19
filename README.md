@@ -39,14 +39,6 @@ Update data feed
 npm run update
 ```
 
-## Deployment
-
-Deployment is handled via [surge](https://surge.sh/)
-
-``` sh
-npm run deploy
-```
-
 ## Run in dev mode
 
 Either run `npm run watch` to run a build on file changes or replace:
