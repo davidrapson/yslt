@@ -9,7 +9,7 @@ A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped
 ## Getting Started
 
 ``` sh
-npm install 
+npm install
 jspm install
 npm start
 ```
@@ -47,10 +47,7 @@ npm run deploy
 ## Run in dev mode
 
 ``` js
-<script src="JSXTransformer.js"></script>
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
-<script>
-    System.import('lib/main.jsx!');
-</script>
+<script>System.import('lib/main.jsx!');</script>
 ```
