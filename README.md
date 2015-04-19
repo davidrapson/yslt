@@ -49,7 +49,15 @@ npm run deploy
 
 ## Run in dev mode
 
-``` js
+Either run `npm run watch` to run a build on file changes or replace:
+
+``` html
+<script src="build/app.js" async defer></script>
+```
+
+with
+
+``` html
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 <script>System.import('lib/main.jsx!');</script>
