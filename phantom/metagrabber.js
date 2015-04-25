@@ -1,9 +1,14 @@
 var fs = require('fs');
+var beautify = require('js-beautify').js_beautify
 var page = require('webpage').create();
 
 var baseUrl = 'http://www.metacritic.com/browse/albums/score/metascore/year?year_selected=';
 var currentYear = (new Date().getFullYear());
 var url = baseUrl + currentYear;
+
+function writeJson(data) {
+    fs.write('data/albums.json', beautify(JSON.stringify(data)), 'w');
+}
 
 page.open(url, function(status) {
     if(status === "success") {
@@ -25,10 +30,11 @@ page.open(url, function(status) {
             return albumData;
         });
 
-        fs.write('data/albums.json', JSON.stringify({
+        writeJson({
             updated: (new Date()).toISOString(),
             results: albums
-        }), 'w');
+        });
+
     }
     phantom.exit();
 });
