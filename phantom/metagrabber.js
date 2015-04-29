@@ -13,7 +13,7 @@ function writeJson(data) {
 page.open(url, function(status) {
     if(status === "success") {
         var albums = page.evaluate(function() {
-            var albumEls = [].slice.call(document.querySelectorAll('.product_row')).slice(0,50);
+            var albumEls = [].slice.call(document.querySelectorAll('.product_row'));
             var albumData = albumEls.map(function(album) {
                 var score = album.querySelector('.product_score .release');
                 var title = album.querySelector('.product_title a');
