@@ -1,5 +1,5 @@
 {
-    "updated": "2015-04-29T14:59:47.312Z",
+    "updated": "2015-04-30T15:26:23.383Z",
     "results": [{
         "artist": "Kendrick Lamar",
         "releaseDate": "Mar 16, 2015",
@@ -111,6 +111,11 @@
         "score": "85",
         "title": "Levon Vincent"
     }, {
+        "artist": "Paul Weller",
+        "releaseDate": "May 12, 2015",
+        "score": "85",
+        "title": "Saturn's Pattern"
+    }, {
         "artist": "Mini Mansions",
         "releaseDate": "Mar 24, 2015",
         "score": "85",
@@ -131,11 +136,6 @@
         "score": "84",
         "title": "Ba Power"
     }, {
-        "artist": "Stornoway",
-        "releaseDate": "Apr 13, 2015",
-        "score": "84",
-        "title": "Bonxie"
-    }, {
         "artist": "UFOmammut",
         "releaseDate": "Mar 31, 2015",
         "score": "84",
@@ -150,6 +150,11 @@
         "releaseDate": "Mar 17, 2015",
         "score": "84",
         "title": "Down to Believing"
+    }, {
+        "artist": "Stornoway",
+        "releaseDate": "Apr 13, 2015",
+        "score": "84",
+        "title": "Bonxie"
     }, {
         "artist": "LoneLady",
         "releaseDate": "Mar 24, 2015",
@@ -211,6 +216,11 @@
         "score": "83",
         "title": "White Men Are Black Men Too"
     }, {
+        "artist": "Hot Chip",
+        "releaseDate": "May 19, 2015",
+        "score": "83",
+        "title": "Why Make Sense?"
+    }, {
         "artist": "Gretchen Peters",
         "releaseDate": "Feb 10, 2015",
         "score": "83",
@@ -226,10 +236,10 @@
         "score": "82",
         "title": "The Joy of Waiting"
     }, {
-        "artist": "METZ",
-        "releaseDate": "May 4, 2015",
+        "artist": "Tom Russell",
+        "releaseDate": "Apr 13, 2015",
         "score": "82",
-        "title": "II"
+        "title": "The Rose of Roscrae"
     }, {
         "artist": "Panda Bear",
         "releaseDate": "Jan 13, 2015",
@@ -306,11 +316,6 @@
         "score": "82",
         "title": "In the Pink of Condition"
     }, {
-        "artist": "Blur",
-        "releaseDate": "Apr 28, 2015",
-        "score": "82",
-        "title": "The Magic Whip"
-    }, {
         "artist": "Mount Eerie",
         "releaseDate": "Feb 3, 2015",
         "score": "82",
@@ -361,6 +366,11 @@
         "score": "81",
         "title": "Short Movie"
     }, {
+        "artist": "Blur",
+        "releaseDate": "Apr 28, 2015",
+        "score": "81",
+        "title": "The Magic Whip"
+    }, {
         "artist": "Gill Landry",
         "releaseDate": "Mar 3, 2015",
         "score": "81",
@@ -370,11 +380,6 @@
         "releaseDate": "Feb 17, 2015",
         "score": "81",
         "title": "Fortune"
-    }, {
-        "artist": "My Morning Jacket",
-        "releaseDate": "May 4, 2015",
-        "score": "81",
-        "title": "The Waterfall"
     }, {
         "artist": "Cloakroom",
         "releaseDate": "Jan 20, 2015",
@@ -400,6 +405,11 @@
         "releaseDate": "Jan 26, 2015",
         "score": "80",
         "title": "Ornithophobia"
+    }, {
+        "artist": "Sarah Neufeld",
+        "releaseDate": "Apr 28, 2015",
+        "score": "80",
+        "title": "Never Were the Way She Was"
     }, {
         "artist": "Alasdair Roberts",
         "releaseDate": "Jan 27, 2015",
@@ -446,6 +456,11 @@
         "score": "80",
         "title": "Jekyll Island"
     }, {
+        "artist": "Nai Harvest",
+        "releaseDate": "Apr 28, 2015",
+        "score": "80",
+        "title": "Hairball"
+    }, {
         "artist": "Lupe Fiasco",
         "releaseDate": "Jan 20, 2015",
         "score": "80",
@@ -461,11 +476,6 @@
         "score": "80",
         "title": "Worthy"
     }, {
-        "artist": "Nai Harvest",
-        "releaseDate": "Apr 28, 2015",
-        "score": "80",
-        "title": "Hairball"
-    }, {
         "artist": "Scuba",
         "releaseDate": "Mar 23, 2015",
         "score": "80",
@@ -480,15 +490,5 @@
         "releaseDate": "Apr 21, 2015",
         "score": "80",
         "title": "Sound & Color"
-    }, {
-        "artist": "Sarah Neufeld",
-        "releaseDate": "Apr 28, 2015",
-        "score": "80",
-        "title": "Never Were the Way She Was"
-    }, {
-        "artist": "Pokey LaFarge",
-        "releaseDate": "Apr 7, 2015",
-        "score": "80",
-        "title": "Something in the Water"
     }]
 }
