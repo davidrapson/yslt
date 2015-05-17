@@ -15,7 +15,7 @@ System.config({
     "classnames": "npm:classnames@1.2.2",
     "jsonp": "npm:jsonp@0.1.0",
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",
-    "react": "npm:react@0.13.3",
+    "react": "npm:react@0.14.0-alpha1",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "whatwg-fetch": "npm:whatwg-fetch@0.7.0",
@@ -378,7 +378,7 @@ System.config({
       "jstransform": "npm:jstransform@10.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:react@0.13.3": {
+    "npm:react@0.14.0-alpha1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "envify": "npm:envify@3.4.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
