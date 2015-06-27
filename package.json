@@ -1,6 +1,6 @@
 {
   "name": "yslt",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "You should listen to",
   "main": "index.js",
   "devDependencies": {
