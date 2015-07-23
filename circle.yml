@@ -1,6 +1,3 @@
-dependencies:
-  post:
-    - jspm install
 deployment:
   production:
     branch: master
