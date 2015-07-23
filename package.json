@@ -26,7 +26,7 @@
     "buildCss": "csso -i css/style.css -o css/style.min.css",
     "buildJs": "npm run jsLint && npm run jsBundle && npm run jsMinify",
     "build": "npm run buildJs && npm run buildCss",
-    "distCopy": "cp -r {CNAME,build/,data/} dist/",
+    "distCopy": "cp -r CNAME dist/ && cp -r build/ dist/",
     "distCritical": "html-inline --ignore-images --ignore-scripts -i index.html -o dist/index.html",
     "dist": "npm run clean && npm run build && npm run distCopy && npm run distCritical",
     "start": "npm run build && browser-sync start --server",
