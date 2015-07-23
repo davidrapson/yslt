@@ -6,7 +6,7 @@ A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped
 
 [yslt.davidrapson.co.uk](http://yslt.davidrapson.co.uk/)
 
-![](https://circleci.com/gh/davidrapson/yslt.svg?circle-token=:cea3749e002a4f777b11dfd2ce03ac2aa55b3ff0)
+![](https://circleci.com/gh/davidrapson/yslt/tree/master.svg?circle-token=cea3749e002a4f777b11dfd2ce03ac2aa55b3ff0)
 
 ## Getting Started
 
