@@ -46,7 +46,7 @@ npm run update
 Either run `npm run watch` to run a build on file changes or replace:
 
 ``` html
-<script src="build/app.js" async defer></script>
+<script src="build/app.js" async></script>
 ```
 
 with
