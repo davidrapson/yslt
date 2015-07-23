@@ -30,6 +30,7 @@
     "distCritical": "html-inline --ignore-images --ignore-scripts -i index.html -o dist/index.html",
     "dist": "npm run clean && npm run build && npm run distCopy && npm run distCritical",
     "start": "npm run build && browser-sync start --server",
+    "test": "npm run jsLint",
     "watch": "npm run build && watch scripts/build lib/",
     "deploy": "npm run dist && surge dist/"
   },
