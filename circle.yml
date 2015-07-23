@@ -6,4 +6,4 @@ deployment:
     branch: master
     commands:
       - npm run update dist
-      - surge --project ./dist/ --domain yslt.davidrapson.co.uk
+      - surge --project dist/ --domain yslt.davidrapson.co.uk
