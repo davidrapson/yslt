@@ -9,6 +9,10 @@
     },
     "rules": {
         "semi": 0,
-        "quotes": [2, "single"]
-    }
+        "quotes": [2, "single"],
+        "no-unused-vars": 0
+    },
+    "plugins": [
+        "react"
+    ]
 }

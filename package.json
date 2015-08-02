@@ -8,6 +8,7 @@
     "csso": "^1.3.11",
     "envify": "^3.4.0",
     "eslint": "^0.24.0",
+    "eslint-plugin-react": "^3.1.0",
     "html-inline": "^1.1.1",
     "js-beautify": "^1.5.10",
     "jspm": "^0.15.7",
@@ -21,7 +22,7 @@
     "update": "phantomjs phantom/metagrabber.js",
     "clean": "rimraf dist/ && mkdir dist/",
     "jsLint": "eslint lib/",
-    "jsBundle": "jspm bundle-sfx lib/main.jsx! build/app.js",
+    "jsBundle": "jspm bundle-sfx lib/main build/app.js",
     "jsMinify": "export NODE_ENV=production && envify build/app.js | uglifyjs --mangle -o build/app.min.js",
     "buildCss": "csso -i css/style.css -o css/style.min.css",
     "buildJs": "npm run jsLint && npm run jsBundle && npm run jsMinify",
@@ -41,13 +42,14 @@
     "dependencies": {
       "classnames": "npm:classnames@^1.1.4",
       "jsonp": "npm:jsonp@^0.1.0",
-      "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
       "react": "npm:react@^0.14.0-alpha1",
+      "react-dom": "npm:react-dom@^0.14.0-beta2",
       "whatwg-fetch": "npm:whatwg-fetch@^0.7.0"
     },
     "devDependencies": {
-      "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
     }
   }
 }
