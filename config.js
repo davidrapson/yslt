@@ -10,7 +10,7 @@ System.config({
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js",
-    "models/*": "lib/models/*.js",
+    "services/*": "lib/services/*.js",
     "components/*": "lib/components/*.js",
     "utils/*": "lib/utils/*.js"
   }
