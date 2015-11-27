@@ -54,5 +54,5 @@ with
 ``` html
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
-<script>System.import('lib/main.jsx!');</script>
+<script>System.import('lib/main');</script>
 ```
