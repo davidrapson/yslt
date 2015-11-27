@@ -35,18 +35,12 @@ Watch files for changes
 npm run watch
 ```
 
-Update data feed
-
-``` sh
-npm run update
-```
-
 ## Run in dev mode
 
 Either run `npm run watch` to run a build on file changes or replace:
 
 ``` html
-<script src="build/app.js" async></script>
+<script src="build/app.min.js" async></script>
 ```
 
 with
