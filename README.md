@@ -2,9 +2,9 @@
 
 > Randomly recommends an album from Metacritic's top rated list and pulls in information from the iTunes API.
 
-A little experiment to learn React. Built with JSPM, React, ES6 and gaffer taped together with shell scripts and some old-school web-scraping.
+A little experiment to learn React. Built with JSPM, React, ES6. Backed by [YSLT API](https://github.com/davidrapson/yslt-api)
 
-[yslt.davidrapson.co.uk](http://yslt.davidrapson.co.uk/)
+**See**: [yslt.davidrapson.co.uk](http://yslt.davidrapson.co.uk/)
 
 [![Circle CI](https://circleci.com/gh/davidrapson/yslt.svg)](https://circleci.com/gh/davidrapson/yslt)
 
