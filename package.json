@@ -21,7 +21,7 @@
     "clean": "rimraf dist/ && mkdir dist/",
     "jsLint": "xo --plugin=react -- lib/*.js lib/**/*.js",
     "jsBundle": "jspm bundle-sfx lib/main build/app.js",
-    "jsMinify": "export NODE_ENV=production && envify build/app.js | uglifyjs --mangle -o build/app.min.js",
+    "jsMinify": "NODE_ENV=production && envify build/app.js | uglifyjs --compress 'dead_code, warnings=false' --mangle -o build/app.min.js",
     "buildCss": "csso -i css/style.css -o css/style.min.css",
     "buildJs": "npm run jsLint && npm run jsBundle && npm run jsMinify",
     "build": "npm run buildJs && npm run buildCss",
