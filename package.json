@@ -54,6 +54,9 @@
     "envs": [
       "browser",
       "node"
-    ]
+    ],
+    "rules": {
+      "react/jsx-uses-vars": 2
+    }
   }
 }
