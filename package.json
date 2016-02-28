@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.9.1",
-    "csso": "^1.4.3",
+    "csso": "^1.6.1",
     "envify": "^3.4.0",
     "eslint-plugin-react": "^3.10.0",
     "html-inline": "^1.1.1",
