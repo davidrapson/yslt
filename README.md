@@ -4,10 +4,6 @@
 
 A little experiment to learn React. Built with JSPM, React, ES6. Backed by [YSLT API](https://github.com/davidrapson/yslt-api)
 
-**See**: [yslt.davidrapson.co.uk](http://yslt.davidrapson.co.uk/)
-
-[![Circle CI](https://circleci.com/gh/davidrapson/yslt.svg)](https://circleci.com/gh/davidrapson/yslt)
-
 ## Getting Started
 
 ``` sh
@@ -19,6 +15,7 @@ npm start
 ## Available Tasks
 
 Start BrowserSync server
+
 ``` sh
 npm start
 ```
